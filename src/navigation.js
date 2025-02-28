@@ -95,6 +95,10 @@ function moviePage() {
   categoriesPreviewSection.classList.add('inactive')
   genericSection.classList.add('inactive')
   movieDetailSection.classList.remove('inactive')
+
+  const [ , id] = location.hash.split('=');
+
+  getMovieById(id);
 }
 
 function searchPage() {
